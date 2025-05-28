@@ -1,0 +1,135 @@
+/* Base styles */
+.button {
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition-property: color, background-color, border-color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:focus {
+  outline: none;
+  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow);
+}
+
+/* Size variants */
+.sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.md {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.lg {
+  padding: 0.625rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+/* Button variants */
+.primary {
+  background-color: var(--primary-600);
+  color: white;
+}
+
+.primary:hover {
+  background-color: var(--primary-700);
+}
+
+.primary:focus {
+  --tw-ring-color: var(--primary-500);
+}
+
+.secondary {
+  background-color: var(--secondary-600);
+  color: white;
+}
+
+.secondary:hover {
+  background-color: var(--secondary-700);
+}
+
+.secondary:focus {
+  --tw-ring-color: var(--secondary-500);
+}
+
+.outline {
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  background-color: white;
+}
+
+.outline:hover {
+  background-color: #f9fafb;
+}
+
+.outline:focus {
+  --tw-ring-color: var(--primary-500);
+}
+
+.ghost {
+  color: #374151;
+}
+
+.ghost:hover {
+  background-color: #f3f4f6;
+}
+
+.ghost:focus {
+  --tw-ring-color: var(--primary-500);
+}
+
+.danger {
+  background-color: var(--error-600);
+  color: white;
+}
+
+.danger:hover {
+  background-color: var(--error-700);
+}
+
+.danger:focus {
+  --tw-ring-color: var(--error-500);
+}
+
+/* Width variant */
+.fullWidth {
+  width: 100%;
+}
+
+/* States */
+.loading, .disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Loading spinner */
+.spinner {
+  animation: spin 1s linear infinite;
+  margin-left: -0.25rem;
+  margin-right: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

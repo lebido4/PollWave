@@ -1,0 +1,273 @@
+/* Container */
+.container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom right, var(--primary-600), var(--primary-800));
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .heroContent {
+    padding: 6rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroContent {
+    padding: 8rem 2rem;
+  }
+}
+
+.heroText {
+  max-width: 42rem;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+}
+
+.heroDescription {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .heroDescription {
+    font-size: 1.25rem;
+  }
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primaryButton {
+  background-color: white !important;
+  color: var(--primary-700) !important;
+}
+
+.primaryButton:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.outlineButton {
+  border-color: white !important;
+  color: white !important;
+}
+
+.outlineButton:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.heroGraphic {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.heroIcon {
+  width: 16rem;
+  height: 16rem;
+}
+
+/* Recent Polls Section */
+.recentPolls {
+  background-color: #f9fafb;
+  padding: 4rem 0;
+}
+
+.sectionContainer {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .sectionContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionContainer {
+    padding: 0 2rem;
+  }
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.viewAllLink {
+  color: var(--primary-600);
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.viewAllLink:hover {
+  color: var(--primary-800);
+}
+
+.pollGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .pollGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pollGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.spinner {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  border-bottom-color: var(--primary-700);
+  animation: spin 1s linear infinite;
+}
+
+.emptyMessage {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem 0;
+}
+
+.sectionFooter {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.createButton {
+  background-color: var(--primary-600) !important;
+  color: white !important;
+}
+
+.createButton:hover {
+  background-color: var(--primary-700) !important;
+}
+
+/* CTA Section */
+.cta {
+  background-color: var(--primary-700);
+  color: white;
+  padding: 4rem 0;
+}
+
+.ctaContainer {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .ctaContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaContainer {
+    padding: 0 2rem;
+  }
+}
+
+.ctaTitle {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .ctaTitle {
+    font-size: 2.25rem;
+  }
+}
+
+.ctaDescription {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  background-color: white !important;
+  color: var(--primary-700) !important;
+}
+
+.ctaButton:hover {
+  background-color: #f3f4f6 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

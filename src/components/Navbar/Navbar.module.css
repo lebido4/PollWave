@@ -1,0 +1,202 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoIcon {
+  height: 2rem;
+  width: 2rem;
+  color: var(--primary-600);
+}
+
+.logoText {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.desktopMenu {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .desktopMenu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.link {
+  padding: 0.5rem 0.75rem;
+  color: #374151;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.link:hover {
+  color: var(--primary-600);
+}
+
+.createButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color: var(--primary-600);
+  color: white;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.createButton:hover {
+  background-color: var(--primary-700);
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: #374151;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.logoutButton:hover {
+  color: var(--primary-600);
+}
+
+.logoutIcon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.25rem;
+}
+
+.mobileMenuButton {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .mobileMenuButton {
+    display: none;
+  }
+}
+
+.menuIcon {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  color: #6b7280;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.menuIcon:hover {
+  color: var(--primary-600);
+  background-color: #f3f4f6;
+}
+
+.mobileMenu {
+  display: none;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  animation: slideDown 0.2s ease-out;
+}
+
+.mobileMenu.open {
+  display: block;
+}
+
+.mobileMenuContent {
+  padding: 0.5rem;
+}
+
+.mobileLink {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  color: #374151;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.mobileLink:hover {
+  background-color: #f3f4f6;
+  color: var(--primary-600);
+}
+
+.mobileCreateButton {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  color: #374151;
+  background-color: #f3f4f6;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.mobileCreateButton:hover {
+  color: var(--primary-600);
+}
+
+.mobileLogoutButton {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  color: #374151;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.mobileLogoutButton:hover {
+  background-color: #f3f4f6;
+  color: var(--primary-600);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

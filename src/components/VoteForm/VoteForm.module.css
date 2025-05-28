@@ -1,0 +1,110 @@
+/* Container styles */
+.container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  padding: 1.5rem;
+}
+
+/* Warning message */
+.warningMessage {
+  background-color: var(--warning-50);
+  color: var(--warning-800);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1.5rem;
+}
+
+.warningTitle {
+  font-weight: 500;
+}
+
+.warningText {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form header */
+.header {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* Options container */
+.optionsContainer {
+  margin-bottom: 1.5rem;
+}
+
+/* Option styles */
+.option {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-bottom: 0.75rem;
+}
+
+.option:last-child {
+  margin-bottom: 0;
+}
+
+.option:hover {
+  border-color: #d1d5db;
+}
+
+.optionSelected {
+  border-color: var(--primary-500);
+  background-color: var(--primary-50);
+  box-shadow: 0 0 0 2px var(--primary-200);
+}
+
+.optionContent {
+  display: flex;
+  align-items: center;
+}
+
+/* Radio button styles */
+.radio {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optionSelected .radio {
+  border-color: var(--primary-500);
+}
+
+.radioInner {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--primary-500);
+}
+
+.optionText {
+  color: #1f2937;
+}
+
+/* Error message */
+.error {
+  color: var(--error-600);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button styles are handled by the Button component */
